@@ -86,13 +86,12 @@
   }
 
   function loadMonetization() {
-    // Placeholder for ad network script.
-    // Replace the src and data-site-id with your ad provider values.
-    // const script = document.createElement('script');
-    // script.src = 'https://tu-red-publicitaria.com/script.js';
-    // script.setAttribute('data-site-id', 'TU_SITE_ID');
-    // script.async = true;
-    // document.head.appendChild(script);
+    var script = document.createElement('script');
+    script.src = 'https://quge5.com/88/tag.min.js';
+    script.setAttribute('data-zone', '219880');
+    script.async = true;
+    script.setAttribute('data-cfasync', 'false');
+    document.head.appendChild(script);
   }
 
   function init() {
