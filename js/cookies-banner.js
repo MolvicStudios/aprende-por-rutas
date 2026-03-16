@@ -50,7 +50,6 @@
     btnAll.addEventListener('click', function () {
       setConsent('all');
       hideBanner(banner);
-      loadMonetization();
     });
 
     const btnEssential = document.createElement('button');
@@ -85,22 +84,9 @@
     }, { once: true });
   }
 
-  function loadMonetization() {
-    var script = document.createElement('script');
-    script.src = 'https://quge5.com/88/tag.min.js';
-    script.setAttribute('data-zone', '219880');
-    script.async = true;
-    script.setAttribute('data-cfasync', 'false');
-    document.head.appendChild(script);
-  }
-
   function init() {
     var consent = getConsent();
-    if (consent === 'all') {
-      loadMonetization();
-      return;
-    }
-    if (consent === 'essential') {
+    if (consent) {
       return;
     }
     var banner = buildBanner();

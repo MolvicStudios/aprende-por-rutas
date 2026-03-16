@@ -1,6 +1,8 @@
-self.options = {
-    "domain": "5gvci.com",
-    "zoneId": 10732096
-}
-self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+/* Service Worker — Aprende por Rutas */
+self.addEventListener('install', function () {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', function (event) {
+  event.waitUntil(self.clients.claim());
+});

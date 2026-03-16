@@ -218,17 +218,8 @@
       return;
     }
 
-    rutas.forEach(function (ruta, i) {
+    rutas.forEach(function (ruta) {
       container.appendChild(buildRuta(ruta));
-      // Ad slot between levels (after first few routes)
-      if (i === 2 || i === 8 || i === 14) {
-        var adSlot = el('div', {
-          className: 'ad-slot',
-          id: 'ad-slot--in-content-' + i,
-          'aria-hidden': 'true'
-        });
-        container.appendChild(adSlot);
-      }
     });
   }
 

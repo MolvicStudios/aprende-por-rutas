@@ -62,13 +62,6 @@ ul, ol { list-style: none; }
 }
 .skip-link:focus { top: 8px; color: #fff; }
 
-/* --- Ad Slots --- */
-.ad-slot {
-  min-height: 0; text-align: center;
-  margin: 16px auto; max-width: var(--max-width);
-}
-.ad-slot:empty { display: none; }
-
 /* --- Header --- */
 .site-header {
   background: var(--color-surface);
@@ -561,7 +554,7 @@ ul, ol { list-style: none; }
 
 /* --- Print --- */
 @media print {
-  .site-header, .nav-rutas, .cookies-banner, .ad-slot, .search-container { display: none; }
+  .site-header, .nav-rutas, .cookies-banner, .search-container { display: none; }
   .main-content { padding: 0; }
   .recurso-card { break-inside: avoid; border: 1px solid #ccc; }
 }
