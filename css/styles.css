@@ -427,67 +427,6 @@ ul, ol { list-style: none; }
   font-size: .85rem;
 }
 
-/* --- Cookies Banner --- */
-.cookies-banner {
-  position: fixed; bottom: 0; left: 0; right: 0;
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  box-shadow: 0 -4px 12px rgba(0,0,0,.1);
-  z-index: 999;
-  padding: 16px 20px;
-  transform: translateY(100%);
-  transition: transform .3s ease;
-}
-.cookies-banner.visible { transform: translateY(0); }
-
-.cookies-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.cookies-text {
-  font-size: .85rem;
-  color: var(--color-text-muted);
-  line-height: 1.5;
-}
-.cookies-text a { text-decoration: underline; }
-
-.cookies-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 8px 20px;
-  border-radius: var(--radius-sm);
-  font-size: .85rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: all var(--transition);
-}
-.btn:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: #fff;
-}
-.btn-primary:hover { background: var(--color-primary-dark); }
-
-.btn-secondary {
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-}
-.btn-secondary:hover { border-color: var(--color-primary); color: var(--color-primary); }
-
 /* --- Legal Pages --- */
 .legal-page {
   max-width: 800px;
@@ -521,8 +460,6 @@ ul, ol { list-style: none; }
   .recursos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .cookies-inner { flex-direction: row; align-items: center; }
-  .cookies-actions { margin-left: auto; flex-shrink: 0; }
   .site-subtitle { flex-basis: auto; }
 }
 
@@ -554,7 +491,7 @@ ul, ol { list-style: none; }
 
 /* --- Print --- */
 @media print {
-  .site-header, .nav-rutas, .cookies-banner, .search-container { display: none; }
+  .site-header, .nav-rutas, .search-container { display: none; }
   .main-content { padding: 0; }
   .recurso-card { break-inside: avoid; border: 1px solid #ccc; }
 }
