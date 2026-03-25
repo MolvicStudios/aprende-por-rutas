@@ -480,6 +480,45 @@ ul, ol { list-style: none; }
   }
 }
 
+/* --- Mobile touch & typography fixes --- */
+@media (max-width: 639px) {
+  /* Touch targets mínimo 44px */
+  .nav-ruta-btn {
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: .85rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .search-input {
+    min-height: 44px;
+    padding: 12px 16px 12px 40px;
+    font-size: 1rem;
+  }
+  .footer-links a {
+    padding: 4px 0;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 36px;
+  }
+  .legal-back {
+    min-height: 44px;
+    padding: 8px 0;
+  }
+
+  /* Tipografía mínima legible */
+  .badge { font-size: .75rem; }
+  .badge-tiempo { font-size: .78rem; }
+  .nivel-count { font-size: .78rem; }
+  .recurso-notas { font-size: .78rem; }
+  .ruta-objetivo { font-size: .875rem; }
+  .recurso-descripcion { font-size: .875rem; }
+  .header-stats { font-size: .8125rem; }
+
+  /* Overflow-wrap para URLs largas */
+  .recurso-card { overflow-wrap: break-word; word-break: break-word; }
+}
+
 /* --- Reduced Motion --- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
