@@ -3,7 +3,7 @@
 // SITE se reemplaza automáticamente al integrar en cada web
 
 ;(function () {
-  var SITE     = 'aprendepor.rutas.com'
+  var SITE     = 'aprendegratis.help'
   var ENDPOINT = 'https://molvicstudios-analytics.josemmolera.workers.dev/track'
   var USER_KEY = 'ms_uid'
 
